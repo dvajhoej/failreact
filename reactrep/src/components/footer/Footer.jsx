@@ -1,12 +1,12 @@
 import React from 'react'
 
-export default function Footer() {
+export default function Footer({email, phone, address}) {
 	return (
 		<footer>
 			<ul>
-				<li>Email: Dvajhoej@gmail.com</li>
-				<li>Telefon: +45 61 44 44 52</li>
-				<li>Adresse: Lønneparken 4.1.7, 9000 Aalborg</li>
+				<li>Email: {email}</li>
+				<li>Telefon: {phone}</li>
+				<li>Adresse: {address}</li>
 			</ul>
 		</footer>
 	)

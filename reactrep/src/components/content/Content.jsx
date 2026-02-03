@@ -1,11 +1,11 @@
 import React from 'react'
 
-export default function Content() {
+export default function Content({paragraphOne, paragraphTwo, paragraphThree}) {
 	return (
 		<main>
-			<p>Velkommen til min side.</p>
-			<p>Her kan du finde information om hvad siden</p>
-			<p>kontaktoplysninger findes i bunden af siden.</p>
+			<p>{paragraphOne}</p>
+			<p>{paragraphTwo}</p>
+			<p>{paragraphThree}</p>
 		</main>
 	)
 }
