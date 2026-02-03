@@ -1,12 +1,13 @@
 import React from 'react'
-
-export default function Content({paragraphOne, paragraphTwo, paragraphThree}) {
+import './Content.css'
+export default function Content({paragraphOne, paragraphTwo, paragraphThree, picture}) {
 	return (
-		<main>
+		<>
 			<p>{paragraphOne}</p>
 			<p>{paragraphTwo}</p>
 			<p>{paragraphThree}</p>
-		</main>
+			<img className='frog' src={picture} alt="Content related" />
+		</>
 	)
 }
 
